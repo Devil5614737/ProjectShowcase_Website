@@ -1,0 +1,467 @@
+.header {
+  background: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.56);
+  z-index: -1;
+}
+
+.header .content {
+  margin-top: 82px;
+}
+
+@media screen and (max-width: 500px) {
+  .header .content {
+    margin-top: 150px;
+  }
+}
+
+.header .content .title {
+  color: white;
+  font-size: 5.4rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+
+.header .content .title .span {
+  color: #1A16EC;
+}
+
+@media screen and (max-width: 750px) {
+  .header .content .title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header .content .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header .content .title {
+    font-size: 2.5rem;
+  }
+}
+
+.header .content .sub_title {
+  color: #b2b2b2;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+  .header .content .sub_title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .content .sub_title {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header .content .sub_title {
+    font-size: 1rem;
+  }
+}
+
+.header .content .explore_btn {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  background-color: #1A16EC;
+  width: 160px;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  margin-top: 22px;
+}
+
+@media screen and (max-width: 750px) {
+  .header .content .explore_btn {
+    font-size: 1.7rem;
+    height: 40px;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header .content .explore_btn {
+    font-size: 1.5rem;
+    height: 30px;
+    width: 110px;
+  }
+}
+
+.projects_section {
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding: 3em 8em;
+  margin-top: 52px;
+}
+
+.projects_section .title_container .bar {
+  height: 6px;
+  width: 55px;
+  background-color: #1A16EC;
+  border-radius: 100px;
+}
+
+.projects_section .title_container .title {
+  margin-top: 1px;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+  .projects_section .title_container .title {
+    font-size: 2.6rem;
+  }
+}
+
+.projects_section .project_container {
+  padding-right: 2rem;
+  margin-top: 92px;
+}
+
+.projects_section .project_container .project {
+  margin-bottom: 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1158px) {
+  .projects_section .project_container .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.projects_section .project_container .project .projects_details {
+  margin-top: 22px;
+  margin-right: 82px;
+}
+
+@media screen and (max-width: 1158px) {
+  .projects_section .project_container .project .projects_details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.projects_section .project_container .project .projects_details .project_title_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .projects_section .project_container .project .projects_details .project_title_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 12px;
+  }
+}
+
+.projects_section .project_container .project .projects_details .project_title_container .bar1 {
+  height: 23px;
+  width: 7px;
+  background-color: #1A16EC;
+}
+
+@media screen and (max-width: 750px) {
+  .projects_section .project_container .project .projects_details .project_title_container .bar1 {
+    height: 21px;
+    width: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects_section .project_container .project .projects_details .project_title_container .bar1 {
+    height: 18px;
+    width: 3px;
+  }
+}
+
+.projects_section .project_container .project .projects_details .project_title_container .project_title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+@media screen and (max-width: 750px) {
+  .projects_section .project_container .project .projects_details .project_title_container .project_title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects_section .project_container .project .projects_details .project_title_container .project_title {
+    font-size: 2rem;
+  }
+}
+
+.projects_section .project_container .project .tags_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.projects_section .project_container .project .tags_container .tag {
+  overflow: hidden;
+  color: white;
+  background: #272626;
+  width: 30%;
+  font-size: 1em;
+  padding: 0.4em 1em;
+  text-align: center;
+  margin-right: 12px;
+}
+
+.projects_section .project_container .project .links_container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 22px;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 500px) {
+  .projects_section .project_container .project .links_container {
+    font-size: 1.2rem;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.projects_section .project_container .project .links_container .link {
+  color: #05c19c;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .projects_section .project_container .project .links_container .link {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects_section .project_container .project .links_container .link {
+    font-size: 1.2rem;
+  }
+}
+
+.projects_section .project_container .project .links_container .link:hover {
+  text-decoration: underline;
+}
+
+.projects_section .project_container .project .links_container .link:hover .icon {
+  margin-left: 12px;
+}
+
+.link_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_container {
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding: 3em 8em;
+  margin-top: 52px;
+}
+
+.contact_container .contact_title .line {
+  height: 6px;
+  width: 55px;
+  background-color: #1A16EC;
+  border-radius: 100px;
+}
+
+.contact_container .contact_title p {
+  margin-top: 1px;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .contact_container .contact_title p {
+    font-size: 2.5rem;
+  }
+}
+
+.contact_container .input_container {
+  width: 70%;
+  margin-top: 52px;
+  position: relative;
+}
+
+.contact_container .input_container .label {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.contact_container .input_container .input {
+  display: block;
+  border: none;
+  margin-top: 12px;
+  margin-bottom: 42px;
+  height: 100px;
+  background: #292929;
+  color: white;
+  font-size: 1.8rem;
+  padding: 0 0.7em;
+  width: 90%;
+}
+
+.contact_container .input_container .input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 500px) {
+  .contact_container .input_container .input {
+    width: 170%;
+    height: 40px;
+  }
+}
+
+.contact_container .input_container .textarea {
+  resize: none;
+  display: block;
+  margin-top: 12px;
+  width: 100%;
+  background: #292929;
+  border: none;
+  color: white;
+  height: 200px;
+  padding: 0.7em;
+  font-size: 1.7em;
+}
+
+@media screen and (max-width: 500px) {
+  .contact_container .input_container .textarea {
+    width: 170%;
+    height: 140px;
+  }
+}
+
+.contact_container .input_container .textarea:focus {
+  outline: none;
+}
+
+.send_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1A16EC;
+  width: 120px;
+  position: absolute;
+  margin-bottom: 12px;
+  right: 0;
+  margin-top: 12px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .send_btn {
+    margin-right: -96px;
+  }
+}
+
+.send_btn p {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .send_btn p {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=Home.module.css.map */

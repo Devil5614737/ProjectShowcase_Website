@@ -1,0 +1,25 @@
+{
+  "name": "project_showcase-website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^5.5.4",
+    "gsap": "^3.9.0",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.45.0",
+    "sharp": "^0.29.3"
+  },
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7"
+  }
+}
