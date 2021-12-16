@@ -62,7 +62,7 @@ export default function Home() {
       <div className={styles.header} id="home">
         <Navbar />
         <div className={styles.content}>
-          <motion.h4
+          <motion.h1
             initial={{ opacity: 0, scale: 0.1 }}
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -70,7 +70,7 @@ export default function Home() {
           >
             Looking for <span className={styles.span}>ideas</span> for your
             <br /> next <span className={styles.span}>project</span>
-          </motion.h4>
+          </motion.h1>
           <motion.p
             initial={{ opacity: 0, scale: 0.1, x: 100 }}
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
