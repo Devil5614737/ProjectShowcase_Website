@@ -39,7 +39,6 @@ export default function Home() {
   return (
     <>
       <Head>
-
         <meta
           name="description"
           content="Free code tutorials ,website clones"
@@ -62,7 +61,7 @@ export default function Home() {
       <div className={styles.header} id="home">
         <Navbar />
         <div className={styles.content}>
-          <motion.h4
+          <motion.h1
             initial={{ opacity: 0, scale: 0.1 }}
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -70,7 +69,7 @@ export default function Home() {
           >
             Looking for <span className={styles.span}>ideas</span> for your
             <br /> next <span className={styles.span}>project</span>
-          </motion.h4>
+          </motion.h1>
           <motion.p
             initial={{ opacity: 0, scale: 0.1, x: 100 }}
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
@@ -117,7 +116,6 @@ export default function Home() {
               <div className={styles.links_container}>
                 <div className={styles.link_container}>
                   <a
-                
                     href="https://netflix-cloned.vercel.app/"
                     title=" live demo"
                     className={styles.link}
@@ -134,7 +132,6 @@ export default function Home() {
                 </div>
                 <div className={styles.link_container}>
                   <a
-                
                     href="https://github.com/Devil5614737/NetflixClone"
                     title="github respository"
                     className={styles.link}
@@ -164,7 +161,6 @@ export default function Home() {
               height={428}
               width={679}
               alt="project thumbnail"
-     
             />
             <div className={styles.projects_details}>
               <div className={styles.project_title_container}>
@@ -179,7 +175,6 @@ export default function Home() {
               <div className={styles.links_container}>
                 <div className={styles.link_container}>
                   <a
-                
                     href="https://instagram-clone-mauve.vercel.app/"
                     title="live demo"
                     className={styles.link}
@@ -196,7 +191,6 @@ export default function Home() {
                 </div>
                 <div className={styles.link_container}>
                   <a
-                
                     href="https://github.com/Devil5614737/Instagram-clone"
                     title="github repository"
                     className={styles.link}
@@ -226,7 +220,6 @@ export default function Home() {
               height={428}
               width={679}
               alt="project thumbnail"
-           
             />
             <div className={styles.projects_details}>
               <div className={styles.project_title_container}>
@@ -241,7 +234,6 @@ export default function Home() {
               <div className={styles.links_container}>
                 <div className={styles.link_container}>
                   <a
-                
                     href="https://ecommerce-shoe-store.vercel.app/"
                     title="live demo"
                     className={styles.link}
@@ -258,7 +250,6 @@ export default function Home() {
                 </div>
                 <div className={styles.link_container}>
                   <a
-                
                     href="https://github.com/Devil5614737/Ecommerce_ShoeStore"
                     title="github repository"
                     className={styles.link}
@@ -312,7 +303,6 @@ export default function Home() {
               cols="30"
               rows="10"
               className={styles.textarea}
-            
             ></textarea>
           </form>
           <div className={styles.send_btn}>
