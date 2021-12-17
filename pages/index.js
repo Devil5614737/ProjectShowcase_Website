@@ -47,7 +47,12 @@ export default function Home() {
           name="keywords"
           content="HTML, CSS, JavaScript Sass React Styled-components Firebase Clone Demo Github"
         />
-        {/* TODO:set meta tag of type and url, see example of search engine optimization of mosh course if your forget */}
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="blob:https://vercel.com/468e29c5-d995-4085-9044-d5d72b71398c"
+        />
         <meta name="author" content="Kaushik sheel" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Free web project ideas and clones</title>
