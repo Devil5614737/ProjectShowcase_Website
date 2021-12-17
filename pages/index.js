@@ -89,7 +89,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <main id="projects" className={styles.projects_section}>
+      <section id="projects" className={styles.projects_section}>
         <div className={styles.title_container}>
           <div className={styles.bar}></div>
           <p className={styles.title}>Projects</p>
@@ -273,7 +273,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-      </main>
+      </section>
       <div className={styles.contact_container} id="contact">
         <div className={styles.contact_title}>
           <div className={styles.line}></div>
