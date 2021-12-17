@@ -27,7 +27,7 @@ function Project({ title, image, tags, demo, github }) {
         </div>
         <div className={styles.tags_container}>
           {tags.map((item) => (
-            <p className={styles.tag}>{item}</p>
+            <p key={item} className={styles.tag}>{item}</p>
           ))}
         </div>
         <div className={styles.links_container}>
