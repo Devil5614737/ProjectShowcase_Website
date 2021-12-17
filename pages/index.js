@@ -5,12 +5,11 @@ import Navbar from "../components/Navbar";
 import Thumbnail1 from "../assets/thumbnail1.png";
 import Thumbnail2 from "../assets/thumbnail2.png";
 import Thumbnail3 from "../assets/thumbnail3.png";
-import Arrow from "../assets/arrow.svg";
 import Send from "../assets/send.svg";
-
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
+import Project from "../components/Project";
 
 export default function Home() {
   const form = useRef();
@@ -95,183 +94,17 @@ export default function Home() {
           <p className={styles.title}>Projects</p>
         </div>
         <div className={styles.project_container}>
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            className={styles.project}
-          >
-            <Image
-              layout="intrinsic"
-              src={Thumbnail1}
-              height={428}
-              width={679}
-              alt="project thumbnail"
-            />
-            <div className={styles.projects_details}>
-              <div className={styles.project_title_container}>
-                <div className={styles.bar1}></div>
-                <p className={styles.project_title}>Netflix Clone</p>
-              </div>
-              <div className={styles.tags_container}>
-                <p className={styles.tag}>React</p>
-                <p className={styles.tag}>Firebase</p>
-                <p className={styles.tag}>StyledC</p>
-              </div>
-              <div className={styles.links_container}>
-                <div className={styles.link_container}>
-                  <a
-                    href="https://netflix-cloned.vercel.app/"
-                    title=" live demo"
-                    className={styles.link}
-                  >
-                    Live demo
-                  </a>
-                  <Image
-                    className={styles.icon}
-                    src={Arrow}
-                    width={17}
-                    height={17}
-                    alt="icon"
-                  />
-                </div>
-                <div className={styles.link_container}>
-                  <a
-                    href="https://github.com/Devil5614737/NetflixClone"
-                    title="github respository"
-                    className={styles.link}
-                  >
-                    Github repo
-                  </a>
-                  <Image
-                    className={styles.icon}
-                    src={Arrow}
-                    width={17}
-                    height={17}
-                    alt="icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            className={styles.project}
-          >
-            <Image
-              layout="intrinsic"
-              src={Thumbnail2}
-              height={428}
-              width={679}
-              alt="project thumbnail"
-            />
-            <div className={styles.projects_details}>
-              <div className={styles.project_title_container}>
-                <div className={styles.bar1}></div>
-                <p className={styles.project_title}>Instagram Clone</p>
-              </div>
-              <div className={styles.tags_container}>
-                <p className={styles.tag}>React</p>
-                <p className={styles.tag}>MongoDb</p>
-                <p className={styles.tag}>Node</p>
-              </div>
-              <div className={styles.links_container}>
-                <div className={styles.link_container}>
-                  <a
-                    href="https://instagram-clone-mauve.vercel.app/"
-                    title="live demo"
-                    className={styles.link}
-                  >
-                    Live demo
-                  </a>
-                  <Image
-                    className={styles.icon}
-                    src={Arrow}
-                    width={17}
-                    height={17}
-                    alt="icon"
-                  />
-                </div>
-                <div className={styles.link_container}>
-                  <a
-                    href="https://github.com/Devil5614737/Instagram-clone"
-                    title="github repository"
-                    className={styles.link}
-                  >
-                    Github repo
-                  </a>
-                  <Image
-                    className={styles.icon}
-                    src={Arrow}
-                    width={17}
-                    height={17}
-                    alt="icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            className={styles.project}
-          >
-            <Image
-              layout="intrinsic"
-              src={Thumbnail3}
-              height={428}
-              width={679}
-              alt="project thumbnail"
-            />
-            <div className={styles.projects_details}>
-              <div className={styles.project_title_container}>
-                <div className={styles.bar1}></div>
-                <p className={styles.project_title}>Ecommerce Website</p>
-              </div>
-              <div className={styles.tags_container}>
-                <p className={styles.tag}>React</p>
-                <p className={styles.tag}>Firebase</p>
-                <p className={styles.tag}>Sass</p>
-              </div>
-              <div className={styles.links_container}>
-                <div className={styles.link_container}>
-                  <a
-                    href="https://ecommerce-shoe-store.vercel.app/"
-                    title="live demo"
-                    className={styles.link}
-                  >
-                    Live demo
-                  </a>
-                  <Image
-                    className={styles.icon}
-                    src={Arrow}
-                    width={17}
-                    height={17}
-                    alt="icon"
-                  />
-                </div>
-                <div className={styles.link_container}>
-                  <a
-                    href="https://github.com/Devil5614737/Ecommerce_ShoeStore"
-                    title="github repository"
-                    className={styles.link}
-                  >
-                    Github repo
-                  </a>
-                  <Image
-                    className={styles.icon}
-                    src={Arrow}
-                    width={17}
-                    height={17}
-                    alt="icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </motion.div>
+         
+         <Project title='Netflix Clone' image={Thumbnail1} 
+         tags={['React',"Firebase","StyledC"]}
+         demo='https://netflix-cloned.vercel.app/' github='https://github.com/Devil5614737/NetflixClone'/>
+         <Project title='Instagram Clone' image={Thumbnail2} 
+         tags={['React',"MongoDb","Node"]}
+         demo='https://instagram-clone-mauve.vercel.app/' github='https://github.com/Devil5614737/Instagram-clone' />
+         <Project title='Ecommerce Website' image={Thumbnail3} 
+         tags={['React',"Firebase","Sass"]}
+         demo='https://ecommerce-shoe-store.vercel.app/' github='https://github.com/Devil5614737/Ecommerce_ShoeStore'  />
+        
         </div>
       </section>
       <div className={styles.contact_container} id="contact">

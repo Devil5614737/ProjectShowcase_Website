@@ -40,13 +40,13 @@
         .links_ul{
             @include flex(space-between);
             .links_li{
-                // margin-right: 52px;
+         
                 .link{
                     font-size: 1.6rem;
                     color: white;
                   &:hover{
                     border-bottom: 3px solid $blue;
-                    // transition: border-bottom .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+             
                   }
                     @media screen and (max-width:750px) {
                         font-size: 1rem;
