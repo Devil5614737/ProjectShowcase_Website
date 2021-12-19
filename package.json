@@ -1,5 +1,6 @@
 {
   "name": "project_showcase-website",
+  "homepage":"http://projectideas.com",
   "private": true,
   "scripts": {
     "dev": "next dev",
