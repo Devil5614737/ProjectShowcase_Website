@@ -2,9 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
-import Thumbnail1 from "../assets/thumbnail1.png";
-import Thumbnail2 from "../assets/thumbnail2.png";
-import Thumbnail3 from "../assets/thumbnail3.png";
+import Thumbnail1 from "../assets/thumbnail1-min.png";
+import Thumbnail2 from "../assets/thumbnail2-min.png";
+import Thumbnail3 from "../assets/thumbnail3-min.png";
 import Send from "../assets/send.svg";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
@@ -90,21 +90,31 @@ export default function Home() {
       </div>
       <section id="projects" className={styles.projects_section}>
         <div className={styles.title_container}>
-          <div className={styles.bar}></div>
+          <div className={styles.line}></div>
           <p className={styles.title}>Projects</p>
         </div>
         <div className={styles.project_container}>
-         
-         <Project title='Netflix Clone' image={Thumbnail1} 
-         tags={['React',"Firebase","StyledC"]}
-         demo='https://netflix-cloned.vercel.app/' github='https://github.com/Devil5614737/NetflixClone'/>
-         <Project title='Instagram Clone' image={Thumbnail2} 
-         tags={['React',"MongoDb","Node"]}
-         demo='https://instagram-clone-mauve.vercel.app/' github='https://github.com/Devil5614737/Instagram-clone' />
-         <Project title='Ecommerce Website' image={Thumbnail3} 
-         tags={['React',"Firebase","Sass"]}
-         demo='https://ecommerce-shoe-store.vercel.app/' github='https://github.com/Devil5614737/Ecommerce_ShoeStore'  />
-        
+          <Project
+            title="Netflix Clone"
+            image={Thumbnail1}
+            tags={["React", "Firebase", "StyledC"]}
+            demo="https://netflix-cloned.vercel.app/"
+            github="https://github.com/Devil5614737/NetflixClone"
+          />
+          <Project
+            title="Instagram Clone"
+            image={Thumbnail2}
+            tags={["React", "MongoDb", "Node"]}
+            demo="https://instagram-clone-mauve.vercel.app/"
+            github="https://github.com/Devil5614737/Instagram-clone"
+          />
+          <Project
+            title="Ecommerce Website"
+            image={Thumbnail3}
+            tags={["React", "Firebase", "Sass"]}
+            demo="https://ecommerce-shoe-store.vercel.app/"
+            github="https://github.com/Devil5614737/Ecommerce_ShoeStore"
+          />
         </div>
       </section>
       <div className={styles.contact_container} id="contact">

@@ -5,9 +5,8 @@
   justify-content: $justify;
   align-items: $align;
 }
-
 .header {
-  background: url("../assets/background.jpg");
+  background: url("../assets/background-min.jpg");
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -22,7 +21,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.56);
+    background: $overlay;
     z-index: -1;
   }
   .content {
@@ -31,7 +30,7 @@
       margin-top: 150px;
     }
     .title {
-      color: white;
+      color: $white;
       font-size: 5.4rem;
       font-weight: bold;
       text-align: center;
@@ -51,7 +50,7 @@
       }
     }
     .sub_title {
-      color: #b2b2b2;
+      color: $grey;
       font-size: 2.2rem;
       text-align: center;
       @media screen and (max-width: 750px) {
@@ -65,7 +64,7 @@
       }
     }
     .explore_btn {
-      color: white;
+      color: $white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -90,22 +89,14 @@
     }
   }
 }
-
 .projects_section {
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   padding: 3em 8em;
   margin-top: 52px;
   .title_container {
-    // @include flex (unset,unset);
-    .bar {
-      height: 6px;
-      width: 55px;
-      background-color: $blue;
-      border-radius: 100px;
-    }
     .title {
       margin-top: 1px;
-      color: white;
+      color: $white;
       font-size: 3rem;
       font-weight: bold;
       @media screen and (max-width: 750px) {
@@ -120,8 +111,6 @@
       margin-bottom: 102px;
       @media screen and (max-width: 1158px) {
         display: flex;
-        // justify-content: center;
-
         flex-direction: column;
       }
       @include flex(space-between, center);
@@ -131,17 +120,14 @@
         @media screen and (max-width: 1158px) {
           display: flex;
           margin-right: unset;
-
           flex-direction: column;
         }
-
         .project_title_container {
           @include flex(unset, center);
           @media screen and (max-width: 500px) {
             @include flex(center, center);
             margin-bottom: 12px;
           }
-
           .bar1 {
             height: 23px;
             width: 7px;
@@ -156,7 +142,7 @@
             }
           }
           .project_title {
-            color: white;
+            color: $white;
             font-size: 3rem;
             font-weight: 500;
             margin-left: 2px;
@@ -173,7 +159,7 @@
         @include flex(unset, unset);
         .tag {
           overflow: hidden;
-          color: white;
+          color: $white;
           background: #272626;
           width: 30%;
           font-size: 1em;
@@ -193,7 +179,7 @@
           place-items: center;
         }
         .link {
-          color: #05c19c;
+          color: $green;
           font-size: 2rem;
           text-align: center;
           line-height: 2;
@@ -215,26 +201,18 @@
     }
   }
 }
-
 .link_container {
   display: flex;
   align-items: center;
 }
-
 .contact_container {
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   padding: 3em 8em;
   margin-top: 52px;
   .contact_title {
-    .line {
-      height: 6px;
-      width: 55px;
-      background-color: $blue;
-      border-radius: 100px;
-    }
     p {
       margin-top: 1px;
-      color: white;
+      color: $white;
       font-size: 3rem;
       font-weight: bold;
       @media screen and (max-width: 500px) {
@@ -247,7 +225,7 @@
     margin-top: 52px;
     position: relative;
     .label {
-      color: white;
+      color: $white;
       font-size: 1.7rem;
       font-weight: 500;
     }
@@ -258,7 +236,7 @@
       margin-bottom: 42px;
       height: 100px;
       background: #292929;
-      color: white;
+      color: $white;
       font-size: 1.8rem;
       padding: 0 0.7em;
       width: 90%;
@@ -277,7 +255,7 @@
       width: 100%;
       background: #292929;
       border: none;
-      color: white;
+      color: $white;
 
       height: 200px;
       padding: 0.7em;
@@ -292,7 +270,6 @@
     }
   }
 }
-
 .send_btn {
   @include flex(space-around, center);
   background-color: $blue;
@@ -303,15 +280,21 @@
   margin-top: 12px;
   height: 40px;
   @media screen and (max-width: 500px) {
-  margin-right: -96px;
+    margin-right: -96px;
   }
   cursor: pointer;
   p {
-    color: white;
+    color: $white;
     font-weight: bold;
     font-size: 2rem;
     @media screen and (max-width: 500px) {
       font-size: 2rem;
-      }
+    }
   }
+}
+.line {
+  height: 6px;
+  width: 55px;
+  background-color: $blue;
+  border-radius: 100px;
 }
