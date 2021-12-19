@@ -29,6 +29,8 @@ export default function Home() {
   return (
     <>
       <Head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8256235856128597"
+     crossorigin="anonymous"></script>
         <meta
           name="description"
           content="Free code tutorials ,website clones"
