@@ -13,10 +13,8 @@ import Project from "../components/Project";
 
 export default function Home() {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_34bfr0i",
@@ -24,14 +22,7 @@ export default function Home() {
         form.current,
 
         "user_aFdDwylEm3OuZU7xFR8TL"
-      )
-      .then(
-        (result) => {
-          window.alert("message sent..");
-        },
-        (error) => {
-          console.log(error.text);
-        }
+      ).then((result) => {window.alert("message sent..");},(error) => {console.log(error.text);}
       );
   };
 
