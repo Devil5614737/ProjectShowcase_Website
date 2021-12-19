@@ -51,7 +51,8 @@ export default function Home() {
           property="og:description"
           content="Free code tutorials ,website clones"
         />
-        <link rel="icon" href="./favicon.svg" />
+        <link rel="icon" href="./favicon.svg" /><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8256235856128597"
+     crossorigin="anonymous"></script>
       </Head>
       <div className={styles.header} id="home">
         <Navbar />
