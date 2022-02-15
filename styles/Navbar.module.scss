@@ -6,8 +6,11 @@
 }
 
 .navbar{
+  
+}
+.navbarContainer{
     @include flex(space-between);
-    padding: 1em 8em;
+    padding: 1em 4%;
     @media screen and (max-width:500px) {
        padding-left: 15px;
        padding-right: 15px;
@@ -16,7 +19,7 @@
     .logo{
         color: white;
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 2.2rem;
         .span{
             color: #00C6CF;
         }
@@ -25,18 +28,9 @@
           }
     }
     .links{
-   width: 340px;
-   @media screen and (max-width:750px) {
-    width: 240px;
-  }
- 
-   @media screen and (max-width:575px) {
-    width: 180px;
-  }
-  @media screen and (max-width:500px) {
-    width: 140px;
+
     
-  }
+  
         .links_ul{
             @include flex(space-between);
             .links_li{
@@ -44,6 +38,10 @@
                 .link{
                     font-size: 1.6rem;
                     color: white;
+                    margin-left: 72px;
+                    @media screen and (max-width:650px) {
+                   margin-left: 42px;
+                    }
                   &:hover{
                     border-bottom: 3px solid $blue;
              

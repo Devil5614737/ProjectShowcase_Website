@@ -23,6 +23,9 @@
 
 .header .content {
   margin-top: 82px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -97,7 +100,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
   font-size: 2rem;
   background-color: #1A16EC;
   width: 160px;
@@ -126,7 +128,7 @@
 .projects_section {
   -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-  padding: 3em 8em;
+  padding: 1em 4%;
   margin-top: 52px;
 }
 
@@ -143,8 +145,13 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .projects_section .title_container .title {
+    font-size: 2rem;
+  }
+}
+
 .projects_section .project_container {
-  padding-right: 2rem;
   margin-top: 92px;
 }
 
@@ -170,6 +177,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -337,7 +347,7 @@
 .contact_container {
   -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-  padding: 3em 8em;
+  padding: 1em 4%;
   margin-top: 52px;
 }
 
@@ -355,7 +365,6 @@
 }
 
 .contact_container .input_container {
-  width: 70%;
   margin-top: 52px;
   position: relative;
 }
@@ -371,12 +380,13 @@
   border: none;
   margin-top: 12px;
   margin-bottom: 42px;
-  height: 100px;
+  height: 70px;
+  border-radius: 5px;
   background: #292929;
   color: white;
   font-size: 1.8rem;
   padding: 0 0.7em;
-  width: 90%;
+  width: 80%;
 }
 
 .contact_container .input_container .input:focus {
@@ -385,8 +395,8 @@
 
 @media screen and (max-width: 500px) {
   .contact_container .input_container .input {
-    width: 170%;
-    height: 40px;
+    width: 100%;
+    height: 50px;
   }
 }
 
@@ -394,6 +404,7 @@
   resize: none;
   display: block;
   margin-top: 12px;
+  border-radius: 5px;
   width: 100%;
   background: #292929;
   border: none;
@@ -405,7 +416,7 @@
 
 @media screen and (max-width: 500px) {
   .contact_container .input_container .textarea {
-    width: 170%;
+    width: 100%;
     height: 140px;
   }
 }
