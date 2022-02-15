@@ -349,6 +349,7 @@
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   padding: 1em 4%;
   margin-top: 52px;
+  position: relative;
 }
 
 .contact_container .contact_title p {
@@ -442,12 +443,6 @@
   margin-top: 12px;
   height: 40px;
   cursor: pointer;
-}
-
-@media screen and (max-width: 500px) {
-  .send_btn {
-    margin-right: -96px;
-  }
 }
 
 .send_btn p {
