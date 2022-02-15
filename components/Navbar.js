@@ -4,7 +4,7 @@
  
  const Navbar=()=>{
 return(
-<div class="navbar">
+<div className={styles.navbar}>
     <div className={styles.navbarContainer}>
         <p className={styles.logo}>
             Code<span className={styles.span}>X</span>
